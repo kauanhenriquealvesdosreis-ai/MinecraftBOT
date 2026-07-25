@@ -1,0 +1,54 @@
+{
+  "bot": {
+    "host": "localhost",
+    "port": 25565,
+    "username": "MinecraftBOT",
+    "version": "1.20.1",
+    "hideServer": true,
+    "auth": "microsoft"
+  },
+  "modules": {
+    "autoEnable": true,
+    "disabledModules": [],
+    "loadOrder": ["core", "utils", "patches", "modules"]
+  },
+  "chat": {
+    "prefix": "!",
+    "allowedCommands": ["*"],
+    "logChat": true
+  },
+  "navigation": {
+    "enabled": true,
+    "allow1by1tunnel": true,
+    "allow1by1hole": true,
+    "allowDownward": true,
+    "maxDropHeight": 3
+  },
+  "mining": {
+    "autoMine": false,
+    "mineOres": ["diamond_ore", "iron_ore", "gold_ore", "redstone_ore", "lapis_ore", "coal_ore", "emerald_ore"],
+    "autoSmelt": false
+  },
+  "farming": {
+    "autoHarvest": false,
+    "autoPlant": true,
+    "cropTypes": ["wheat", "carrots", "potatoes", "beetroots"]
+  },
+  "antiAFK": {
+    "enabled": true,
+    "interval": 30000,
+    "swing": true,
+    "turn": true,
+    "jump": true
+  },
+  "autoReconnect": {
+    "enabled": true,
+    "delay": 5000,
+    "maxRetries": 10
+  },
+  "logging": {
+    "level": "info",
+    "logToFile": false,
+    "logFile": "bot.log"
+  }
+}
